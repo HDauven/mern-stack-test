@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import classnames from "classnames";
 import { loginUser } from "../../actions/authActions";
+import TextFieldGroup from "../common/TextFieldGroup";
 
 class Login extends Component {
   constructor() {
@@ -60,6 +61,7 @@ class Login extends Component {
                 Sign in to your DevConnector account
               </p>
               <form onSubmit={this.onSubmit}>
+                <TextFieldGroup placeholder="Email Address" name="email" />
                 <div className="form-group">
                   <input
                     type="email"
