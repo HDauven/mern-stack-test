@@ -220,8 +220,8 @@ router.post(
         description: req.body.description
       };
 
-      // Add to eudcation array
-      profile.experience.unshift(newEdu);
+      // Add to education array
+      profile.education.unshift(newEdu);
 
       profile.save().then(profile => res.json(profile));
     });
